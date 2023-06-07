@@ -31,7 +31,9 @@ The NYU NON-COMMERCIAL RESEARCH LICENSE is applied to EVQUARIUM (attached in the
 
 For questions about the code, please contact: [Bingqing (Chloe) Liu](https://github.com/xr2006) (xr2006@nyu.edu).
 
-### 3. An illustrative Example
+### 3. Examples
+
+#### A simple example
 
 We built a simple example of mode choice to illustrate how the GLAM logit works. In this example, each agent refers to trips belonging to an OD pair. Only two modes, taxi and transit, are considered for simplicity. Each row of the sample data contains the ID of the agent, travel time and cost of taxi, travel time and cost of transit, and mode share of the two modes. 
 
@@ -50,6 +52,16 @@ We ran GLAM Logit with latent class $K=3$. The estimation results are shown as f
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig3.JPG" width="600px">
 
 The estimated market share E_Taxi (%) and E_Transit (%) are quite close to the input data. Moreover, the results reflect diverse tastes at the agent level though the three latent classes: (1) agent 1-3 have negative $\theta_{time,i}$ and $\theta_{cost,i}$ close to zero, indicating a preference for shorter travel time; (2) agent 4-6 have negative $\theta_{cost,i}$ and $\theta_{time,i}$ close to zero, indicating a preference for lower travel cost; (3) agent 7 and 8 have positive $\theta_{time,i}$ and $\theta_{cost,i}$, indicating an “irregular” preference for longer travel time and higher travel cost. In ubiquitous datasets, “irregular” preference is often related to issues in data collection. To this end, GLAM logit can be used to check the data quality in some cases.
+
+#### New York Statewide mode choice modeling
+
+In a real case study, a NY statewide model choice model is developed using GLAM Logit. Synthetic trips on a typical weekday were used to calibrate the model. We considered six modes enabled by Replica’s datasets, including private auto, public transit, on-demand auto, biking, walking, and carpool. The GLAM logit model with 120,740 agents took 2.79 hours to converge at the 26th iteration, with a rho value of 0.523.
+
+Coefficient distribution: 
+
+
+Coefficient distribution: 
+
 
 
 
