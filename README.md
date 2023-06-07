@@ -69,5 +69,8 @@ Value of time (VOT) distribution in NY state and NYC:
 
 ## 4. Instruction
 
+To run GLAM Logit model:
+
+Please conduct the following steps: 1) define the utility function; 2) prepare group-level choice observation datasets (see [OD_level_RP_processing.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/OD_level_RP_processing.py)), 3) run inverse optimization algorithm for a single agent (see [Group_level_IO.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Group_level_IO.py)), and; 4) run the whole estimation algorithm (see [Model_building.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Model_building.py))
 
 
