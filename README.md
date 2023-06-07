@@ -1,6 +1,6 @@
 # GLAM Logit: A random-utility-consistent method to estimate non-parametric coefficents from ubiquitous datasets
 
-### 1. Introduction
+## 1. Introduction
 
 Group Level Agent-based Mixed (GLAM) Logit is a variation of mixed logit (MXL) model, which provides deterministic and agent-specific estimation that can be efficiently integrated into optimization models. This is an extension of agent-based mixed logit (AMXL) model in Ren and Chow (2022)’s study. Consider within each agent $i ∈ I$ , there is a population $N$ of individuals behaviorally seek to select to maximize their overall utilities. In line with the random utility theory, the total utility derived from an individual $n ∈ N$ choosing alternative $j$ is defined as:
 
@@ -26,14 +26,14 @@ For more details, please refer to the following paper:
 
 [Berry, S., Levinsohn, J., & Pakes, A. (1995). Automobile prices in market equilibrium. Econometrica: Journal of the Econometric Society, 841-890.](https://www.jstor.org/stable/2171802)
 
-### 2. License
+## 2. License
 The NYU NON-COMMERCIAL RESEARCH LICENSE is applied to EVQUARIUM (attached in the repository). Please contact [Joseph Chow](https://github.com/jc7373) (joseph.chow@nyu.edu) for commercial use.
 
 For questions about the code, please contact: [Xiyuan Ren](https://github.com/xr2006) (xr2006@nyu.edu).
 
-### 3. Examples
+## 3. Examples
 
-#### A simple example
+### A simple example
 
 We built a simple example of mode choice to illustrate how the GLAM logit works. In this example, each agent refers to trips belonging to an OD pair. Only two modes, taxi and transit, are considered for simplicity. Each row of the sample data contains the ID of the agent, travel time and cost of taxi, travel time and cost of transit, and mode share of the two modes. 
 
@@ -55,7 +55,7 @@ The estimated market share E_Taxi (%) and E_Transit (%) are quite close to the i
 
 For detailed codes, please check [Illustrative_sample.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Illustrative_sample.py)
 
-#### New York Statewide mode choice modeling
+### New York Statewide mode choice modeling
 
 In a real case study, a NY statewide model choice model is developed using GLAM Logit. Synthetic trips on a typical weekday were used to calibrate the model. We considered six modes enabled by Replica’s datasets, including private auto, public transit, on-demand auto, biking, walking, and carpool. The GLAM logit model with 120,740 agents took 2.79 hours to converge at the 26th iteration, with a rho value of 0.523.
 
@@ -67,7 +67,7 @@ Value of time (VOT) distribution in NY state and NYC:
 
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig5.jpg" width="900px">
 
-### 4. Instruction
+## 4. Instruction
 
 
 
