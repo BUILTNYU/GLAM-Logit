@@ -31,13 +31,25 @@ The NYU NON-COMMERCIAL RESEARCH LICENSE is applied to EVQUARIUM (attached in the
 
 For questions about the code, please contact: [Bingqing (Chloe) Liu](https://github.com/xr2006) (xr2006@nyu.edu).
 
-### 3. Instructions
+### 3. An illustrative Example
 
-To use this Tool:
+We built a simple example of mode choice to illustrate how the GLAM logit works. In this example, each agent refers to trips belonging to an OD pair. Only two modes, taxi and transit, are considered for simplicity. Each row of the sample data contains the ID of the agent, travel time and cost of taxi, travel time and cost of transit, and mode share of the two modes. 
 
-Please
+It is noted that we added two “fake” agents (agent 7 and 8) into the dataset. The mode shares of these two agents are unreasonable since the mode with a longer travel time and a higher cost has a higher market share. The sample data containing aggregated-level mode choice information of 8 agents:
 
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig1.JPG" width="600px">
 
+The derived utilities of the two modes are defined as:
+
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig2.JPG" width="650px">
+
+where $V_{taxi,i}$ and $V_{transit,i}$ are utilities derived from choosing taxi and transit. $\theta_{time,i}$ and $\theta_{cost,i}$ are the coefficients of travel time and cost for agent $i∈I$. $\theta_{c-transit,i}$ is the mode constant for agent $i$. 
+
+We ran GLAM Logit with latent class $K=3$. The estimation results are shown as follows:
+
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig3.JPG" width="600px">
+
+The estimated market share E_Taxi (%) and E_Transit (%) are quite close to the input data. Moreover, the results reflect diverse tastes at the agent level though the three latent classes: (1) agent 1-3 have negative $\theta_{time,i}$ and $\theta_{cost,i}$ close to zero, indicating a preference for shorter travel time; (2) agent 4-6 have negative $\theta_{cost,i}$ and $\theta_{time,i}$ close to zero, indicating a preference for lower travel cost; (3) agent 7 and 8 have positive $\theta_{time,i}$ and $\theta_{cost,i}$, indicating an “irregular” preference for longer travel time and higher travel cost. In ubiquitous datasets, “irregular” preference is often related to issues in data collection. To this end, GLAM logit can be used to check the data quality in some cases.
 
 
 
