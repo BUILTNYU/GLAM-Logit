@@ -29,7 +29,7 @@ For more details, please refer to the following paper:
 ### 2. License
 The NYU NON-COMMERCIAL RESEARCH LICENSE is applied to EVQUARIUM (attached in the repository). Please contact [Joseph Chow](https://github.com/jc7373) (joseph.chow@nyu.edu) for commercial use.
 
-For questions about the code, please contact: [Bingqing (Chloe) Liu](https://github.com/xr2006) (xr2006@nyu.edu).
+For questions about the code, please contact: [Xiyuan Ren](https://github.com/xr2006) (xr2006@nyu.edu).
 
 ### 3. Examples
 
@@ -52,6 +52,8 @@ We ran GLAM Logit with latent class $K=3$. The estimation results are shown as f
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig3.JPG" width="600px">
 
 The estimated market share E_Taxi (%) and E_Transit (%) are quite close to the input data. Moreover, the results reflect diverse tastes at the agent level though the three latent classes: (1) agent 1-3 have negative $\theta_{time,i}$ and $\theta_{cost,i}$ close to zero, indicating a preference for shorter travel time; (2) agent 4-6 have negative $\theta_{cost,i}$ and $\theta_{time,i}$ close to zero, indicating a preference for lower travel cost; (3) agent 7 and 8 have positive $\theta_{time,i}$ and $\theta_{cost,i}$, indicating an “irregular” preference for longer travel time and higher travel cost. In ubiquitous datasets, “irregular” preference is often related to issues in data collection. To this end, GLAM logit can be used to check the data quality in some cases.
+
+For detailed codes, please check [Illustrative_sample.py]
 
 #### New York Statewide mode choice modeling
 
