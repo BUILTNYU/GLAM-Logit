@@ -73,4 +73,12 @@ To run GLAM Logit model:
 
 Please conduct the following steps: 1) define the utility function; 2) prepare group-level choice observation datasets (see [OD_level_RP_processing.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/OD_level_RP_processing.py)), 3) run inverse optimization algorithm for a single agent (see [Group_level_IO.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Group_level_IO.py)), and; 4) run the whole estimation algorithm (see [Model_building.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Model_building.py))
 
+For further questions, please contact: [Xiyuan Ren](https://github.com/xr2006) (xr2006@nyu.edu).
 
+## 5. Significance
+
+Compared with conventional logit models (e.g., MNL, NL, MXL), the significance of GLAM Logit model is three-fold. 
+
+- GLAM Logit takes OD level (instead of individual level) data as inputs, which is efficient in dealing with ubiquitous datasets containing millions of observations. 
+- Preference heterogeneities are based on non-parametric aggregation of coefficients per agent instead of having to assume a distributional fit. The spatial distribution of agent-level coefficients is infeasible for conventional logit models to capture.
+- GLAM Logit can be directly integrated into optimization models as constraints instead of dealing with simulation-based approaches required by mixed logit (MXL) models. For instance, multi-service region assortment can be formulated as a quadratic programming (QP) problem. 
