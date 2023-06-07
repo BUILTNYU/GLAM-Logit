@@ -53,7 +53,7 @@ We ran GLAM Logit with latent class $K=3$. The estimation results are shown as f
 
 The estimated market share E_Taxi (%) and E_Transit (%) are quite close to the input data. Moreover, the results reflect diverse tastes at the agent level though the three latent classes: (1) agent 1-3 have negative $\theta_{time,i}$ and $\theta_{cost,i}$ close to zero, indicating a preference for shorter travel time; (2) agent 4-6 have negative $\theta_{cost,i}$ and $\theta_{time,i}$ close to zero, indicating a preference for lower travel cost; (3) agent 7 and 8 have positive $\theta_{time,i}$ and $\theta_{cost,i}$, indicating an “irregular” preference for longer travel time and higher travel cost. In ubiquitous datasets, “irregular” preference is often related to issues in data collection. To this end, GLAM logit can be used to check the data quality in some cases.
 
-For detailed codes, please check [Illustrative_sample.py]
+For detailed codes, please check [Illustrative_sample.py](https://github.com/BUILTNYU/GLAM-Logit/blob/main/GLAM-Logit/Illustrative_sample.py)
 
 #### New York Statewide mode choice modeling
 
@@ -61,9 +61,13 @@ In a real case study, a NY statewide model choice model is developed using GLAM 
 
 Coefficient distribution: 
 
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig4.jpg" width="900px">
 
-Coefficient distribution: 
+Value of time (VOT) distribution in NY state and NYC:
 
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig5.jpg" width="900px">
+
+### 4. Instruction
 
 
 
