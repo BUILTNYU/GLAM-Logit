@@ -57,11 +57,15 @@ For detailed codes, please check [Illustrative_sample.py](https://github.com/BUI
 
 ### New York Statewide mode choice modeling
 
-In a real case study, a NY statewide model choice model is developed using GLAM Logit. Synthetic trips on a typical weekday were used to calibrate the model. We considered six modes enabled by Replica’s datasets, including private auto, public transit, on-demand auto, biking, walking, and carpool. The GLAM logit model with 120,740 agents took 2.79 hours to converge at the 26th iteration, with a rho value of 0.523.
+In a real case study, a NY statewide model choice model is developed using GLAM Logit. Synthetic trips on a typical weekday were used to calibrate the model. We considered six modes enabled by Replica’s datasets, including private auto, public transit, on-demand auto, biking, walking, and carpool. The GLAM logit model with 120,740 agents took 2.79 hours to converge at the 26th iteration, with a rho value of 0.6197.
 
 Coefficient distribution: 
 
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig4.jpg" width="900px">
+
+Value of time (VOT) of different population segments in NYC and NY state:
+
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/VOT.JPG" width="900px">
 
 Value of time (VOT) distribution in NY state and NYC:
 
