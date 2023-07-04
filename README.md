@@ -63,13 +63,16 @@ Coefficient distribution:
 
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig4.jpg" width="900px">
 
-Value of time (VOT) of different population segments in NYC and NY state:
-
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/VOT.JPG" width="700px">
 
 Value of time (VOT) distribution in NY state and NYC:
 
 <img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/Example_Fig5.jpg" width="900px">
+
+Deliverables:
+
+NYC and NYS [mode choice coefficients](https://zenodo.org/record/8113817), as well as [census block group-level mode share](https://zenodo.org/record/8105151) estimated by GLAM logit are available on Zenodo platform.
+
 
 ## 4. Instruction
 
