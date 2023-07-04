@@ -65,7 +65,7 @@ Coefficient distribution:
 
 Value of time (VOT) of different population segments in NYC and NY state:
 
-<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/VOT.JPG" width="900px">
+<img src="https://github.com/BUILTNYU/GLAM-Logit/blob/main/img_file/VOT.JPG" width="700px">
 
 Value of time (VOT) distribution in NY state and NYC:
 
