@@ -11,7 +11,7 @@ to modify this software are granted; and 4) no rights to assign this license are
 the NYU Office of Industrial Liaison at +1 (212) 263-8178 for commercial licensing opportunities, or for further
 distribution, modification or license rights.
 
-Created by Bingqing Liu and Joseph Y. J. Chow. 
+Created by Xiyuan Ren and Joseph Y. J. Chow. 
  
 IN NO EVENT SHALL NYU, OR THEIR EMPLOYEES, OFFICERS, AGENTS OR TRUSTEES 
 ("COLLECTIVELY "NYU PARTIES") BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL,
@@ -28,4 +28,4 @@ IF ANY, PROVIDED HEREUNDER IS PROVIDED COMPLETELY "AS IS". NYU HAS NO OBLIGATION
 FURTHER DOCUMENTATION, MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS. 
 
 If you use this resource, cite:
-Liu, B., & Chow, J.Y.J., 2024. On-demand mobility-as-a-Service platform assignment games with guaranteed stable outcomes. Transportation Research Part B 188, 103060.
+Ren, X., Chow, J.Y.J., Bansal P. 2025. Nonparametric Mixed Logit Model for Estimating Market-level Parameters from Market Share Data. Transportation Research Part B.
